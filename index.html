@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>login page</title>
+  <link href="login.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  
+  
+   <div class="container">
+    <form>
+     
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id='contact-name' onkeyup='validateName()'>
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="xxxxxxxxxx"id='contact-phone' onkeyup='validatePhone()' >
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" required >
+        <span id="email-error"></span>
+      </div>   
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="password" id='contact-pass' onkeyup='validatePass()' >
+        <span id="pass-error"></span>
+      </div>
+       <div class="input-group">
+      <label>Confirm Password</label>
+      <input type="password" placeholder="password" id='contact-cpass' onkeyup='validateCpass()'>
+        <span id="cpass-error"></span>
+      </div>
+
+    <button onclick="validateForm()">Submit</button>
+   
+  </form>
+   </div>
+  
+  
+  
+  
+  <script src="login.js"></script>
+
+  
+</body>
+
+</html>
